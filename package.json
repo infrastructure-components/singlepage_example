@@ -1,0 +1,30 @@
+{
+  "name": "singlepage_example",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "scripts build src/index.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infrastructure-components/singlepage_example.git"
+  },
+  "author": "Dr. Frank Zickert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infrastructure-components/singlepage_example/issues"
+  },
+  "homepage": "https://github.com/infrastructure-components/singlepage_example#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^5.0.0",
+    "serverless-http": "^1.9.1",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^4.9.4"
+  }
+}
