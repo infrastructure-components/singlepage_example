@@ -11,17 +11,15 @@ export default (
         stackName = "spa-example"
         buildPath = 'build'
         region='eu-west-1'
-        render={() => <div>Hello Single Page App</div>}
+        render={() => <div>Hello Code-Architect!</div>}
     >
 
         <Environment
-            name="dev"
+            name="test"
             offlinePort={3000}
+            domain="my.domain.com"
+            certArn="arn:aws:acm:us-east-1:************:certificate/********-****-****-****-************"
         />
 
-        <Environment
-            name="prod"
-            domain="www.infrastructure-components.com"
-        />
 
     </SinglePageApp>);
