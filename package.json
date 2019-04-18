@@ -4,11 +4,9 @@
   "description": "",
   "scripts": {
     "build": "scripts build src/index.tsx",
-    "deploy-test": "scripts .env deploy src/index.tsx test",
-    "deploy-prod": "scripts .env deploy src/index.tsx prod",
+    "deploy-dev": "scripts .env deploy src/index.tsx dev",
     "spa-example": "scripts app src/index.tsx spa-example",
-    "domain-test": "scripts .env domain src/index.tsx test",
-    "domain-prod": "scripts .env domain src/index.tsx prod"
+    "domain-dev": "scripts .env domain src/index.tsx dev"
   },
   "repository": {
     "type": "git",
@@ -21,19 +19,12 @@
   },
   "homepage": "https://github.com/infrastructure-components/singlepage_example#readme",
   "dependencies": {
-    "express": "^4.16.4",
     "infrastructure-components": "^0.1.22",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
-    "react-router-dom": "^5.0.0",
-    "serverless-http": "^1.9.1",
-    "styled-components": "^4.2.0"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "infrastructure-scripts": "^0.1.22",
-    "serverless-offline": "^4.9.4",
-    "serverless-pseudo-parameters": "^2.4.0",
     "serverless-single-page-app-plugin": "^1.0.2"
   }
 }
