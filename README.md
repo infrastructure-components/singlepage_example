@@ -21,7 +21,9 @@ within AWS
 - buildPath: the relative path to the folder within your project, where to put the build-resources, e.g. "build". You may
 want to add this name to your .gitignore file to keep your repository free from compiled files.
 - region: the AWS-region you want your infrastructure to reside after deployment, e.g. 'us-east-1'
-- render: a function (with no arguments) that returns the main React-Component of your App
+
+Your SinglePageApp contains a `Route`-component that specifies the path at runtime and the React-component to be rendered.
+In this case, we render a simple `div`-element. But you can render any React-component.
 
 In order to deploy your app to AWS, you need to specify at least one `<Environment/>` within your `SinglePageApp`-Component.
 The `Environment` can have the following properties:
@@ -31,6 +33,8 @@ The `Environment` can have the following properties:
 - domain: (optional) a domain that you own and configured in your AWS account, e.g. "my.domain.com"
 - certArn: (optional, required if domain used) the ARN of the certificate that covers your domain
 e.g. `arn:aws:acm:us-east-1:************:certificate/********-****-****-****-************`
+
+
 
 ### Build
 
@@ -101,6 +105,8 @@ This account needs to have at least the permissions of the following policy:
 ```
 
 ## Help and Support
+
+Have a look at our [documentation](https://infrastructure-components.readthedocs.io).
 
 Infrastructure-Components are under active development. If you find a bug or need support of any kind,
 please have a look at our [Spectrum-Chat](https://spectrum.chat/infrastructure).
