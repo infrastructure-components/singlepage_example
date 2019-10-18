@@ -19,12 +19,13 @@
   },
   "homepage": "https://github.com/infrastructure-components/singlepage_example#readme",
   "dependencies": {
-    "infrastructure-components": "^0.1.44",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "infrastructure-components": "^0.3.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "devDependencies": {
-    "infrastructure-scripts": "^0.1.44",
+    "infrastructure-scripts": "^0.3.0",
+    "serverless-pseudo-parameters": "^2.5.0",
     "serverless-single-page-app-plugin": "^1.0.2"
   }
 }
